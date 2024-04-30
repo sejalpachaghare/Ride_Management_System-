@@ -1,0 +1,26 @@
+{% extends "templates/base.html"%}
+
+{% block titile%} {{_("sejal cabs")}}
+{% block content%}
+
+<div class="container">
+    <h2>
+        {{_{"sej cabs vehicle"}}}
+
+    </h2>
+
+    <div>
+        {% for vehicle in vehicles%}
+        <div class="mt-8">
+            <h3>{{_("Model")}}:{{vehicle.model}} {{_"purceased in year"}}</h3>
+            <div>{{vehicle.model}}</div>
+        </div>
+        {% endfor %}
+
+    </div>
+    <a class=""btn btn-primary btn->
+        {{_()}} 
+
+    </a>
+</div>
+{% endblock%}
